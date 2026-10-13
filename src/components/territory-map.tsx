@@ -19,7 +19,7 @@ export default function TerritoryMap({sites,boundary}:Props){
     map=L.map(host,{scrollWheelZoom:false,keyboard:true,attributionControl:true});
     const bounds=L.latLngBounds([]);
     if(boundary?.approvedForPublication&&boundary.features.length){
-     const geometry={type:"FeatureCollection",features:boundary.features} as GeoJSON.FeatureCollection;
+     const geometry={type:"FeatureCollection",features:boundary.features} as import("geojson").FeatureCollection;
      const layer=L.geoJSON(geometry,{style:{color:"#0B3D2E",weight:2,fillColor:"#C9A227",fillOpacity:.12}}).addTo(map);
      if(layer.getBounds().isValid())bounds.extend(layer.getBounds());
     }
