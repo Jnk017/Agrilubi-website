@@ -1,0 +1,3 @@
+import Link from "next/link";
+const links=[["/agropole","L’Agropole"],["/filieres","Filières"],["/territoire-enclavement","Territoire"],["/impact-odd","Impact"],["/gouvernance-partenaires","Gouvernance"],["/investir","Investir"],["/actualites","Actualités"],["/contact","Contact"]];
+export function SiteHeader(){return <header className="site-header"><Link href="/" className="brand" aria-label="SALU, accueil"><span className="brand-symbol" aria-hidden="true">S</span><span><strong>SALU</strong><small>AGROPOLE DU SANKURU</small></span></Link><nav aria-label="Navigation principale">{links.map(([href,label])=><Link key={href} href={href}>{label}</Link>)}</nav></header>}
