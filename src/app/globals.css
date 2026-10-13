@@ -23,3 +23,5 @@
 .language-link{display:inline-flex;align-items:center;justify-content:center;min-width:2.75rem;min-height:2.75rem;padding:.35rem .6rem;border:1px solid var(--gold);color:#fff;font-weight:700;text-decoration:none;letter-spacing:.08em}
 .language-link:hover{background:var(--gold);color:var(--ink)}
 @media(max-width:850px){.language-link{order:1}.site-header nav{order:2}}
+
+.territory-map{min-height:380px;width:100%;margin:1.5rem 0;border:1px solid #b4bbaa;background:#e6e9df}.territory-map:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
