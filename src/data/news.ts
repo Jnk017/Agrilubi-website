@@ -1,0 +1,1 @@
+export type NewsItem={slug:string;title:string;date:string;summary:string;body:string;approved:boolean;source:string};export const news:NewsItem[]=[];export const publishedNews=()=>news.filter(item=>item.approved&&item.source.trim()!==""&&/^\d{4}-\d{2}-\d{2}$/.test(item.date));
