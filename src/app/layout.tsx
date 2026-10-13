@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import "leaflet/dist/leaflet.css";
 import "./globals.css";
 export const metadata: Metadata = {
  title:{default:"Agropole du Sankuru | SALU",template:"%s | Agropole du Sankuru"},
