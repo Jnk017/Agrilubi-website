@@ -1,6 +1,6 @@
 import {describe,it,expect} from "vitest";
 import {approvedBoundary,type TerritoryGeometry} from "./territory-geojson";
-const ring=[[20,-4],[21,-4],[21,-3],[20,-4]];
+// Test coordinates only: not a real SALU site or administrative boundary.\nconst ring=[[20,-4],[21,-4],[21,-3],[20,-4]];
 function boundary(overrides:Partial<TerritoryGeometry>={}):TerritoryGeometry{
  return {type:"FeatureCollection",features:[{type:"Feature",properties:{},geometry:{type:"Polygon",coordinates:[ring]}}],source:"Test fixture only",license:"Test fixture",verifiedAt:"2026-10-01",approvedForPublication:true,...overrides} as TerritoryGeometry;
 }
