@@ -116,3 +116,42 @@
 @media(prefers-reduced-motion:reduce){.sector-card{transition:none}.sector-card:hover{transform:none}}
 
 .sector-photo-fallback{display:flex;align-items:center;justify-content:center;min-height:100%;height:100%;padding:2rem;text-align:center;background:linear-gradient(140deg,#0B3D2E,#356953);color:#fff;font-family:Georgia,serif;font-size:1.25rem}
+
+/* Agropole and investment editorial layouts */
+.institutional-hero{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(1.5rem,4vw,4rem);align-items:center;margin:clamp(1.3rem,3vw,3rem) 0 0}
+.institutional-hero-copy{min-width:0}
+.institutional-hero h1{font-size:clamp(2.5rem,4.7vw,5rem);margin:.55rem 0 1.25rem}
+.institutional-lead{font-size:clamp(1.1rem,1.65vw,1.4rem);line-height:1.65;color:#465348;max-width:62ch}
+.institutional-hero-visual{min-width:0}
+.institutional-hero-visual .sector-photo{aspect-ratio:4/5;border-radius:2px}
+.institutional-hero-visual .sector-photo img{height:100%;object-fit:cover}
+.institutional-text-link{font-weight:700;color:var(--green);align-self:center;text-underline-offset:4px}
+.institutional-photo-disclaimer{font-size:.78rem;color:var(--muted);margin:.8rem 0 0}
+.agropole-pillars{grid-template-columns:repeat(3,minmax(0,1fr))}
+.agropole-pillars .card{display:flex;flex-direction:column;gap:.6rem}
+.agropole-pillars .number{margin:.2rem 0 .3rem}
+.agropole-pillars .card h3{font-size:clamp(1.35rem,2vw,1.8rem);margin:.1rem 0}
+.agropole-pillars .card p:not(.number){margin:.3rem 0 1rem}
+.agropole-pillars .card a{margin-top:auto}
+.agropole-steps{grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(.8rem,1.8vw,1.25rem)}
+.agropole-step{background:#fff;border:1px solid #d7d4c9;padding:clamp(1rem,2vw,1.6rem)}
+.agropole-step-number{display:inline-block;color:var(--earth);font:1.65rem Georgia,serif;margin-bottom:1rem}
+.agropole-step h3{font-size:1.2rem;margin:.25rem 0 .5rem}
+.agropole-step p{margin:.2rem 0;color:var(--muted)}
+.agropole-support-image{min-width:0}
+.agropole-support-image .sector-photo{aspect-ratio:4/3}
+.institutional-cta{display:flex;justify-content:space-between;align-items:center;gap:1.5rem;background:var(--green);color:white;padding:clamp(1.5rem,4vw,3.2rem)}
+.institutional-cta .eyebrow{color:var(--gold)}
+.institutional-cta h2{margin:.25rem 0 .8rem}
+.institutional-cta p{max-width:65ch;color:#dfebe2}
+.institutional-cta .button{flex-shrink:0}
+.institutional-cta a:not(.button){color:white}
+.investor-opportunities{grid-template-columns:repeat(2,minmax(0,1fr))}
+.investor-opportunities .number{display:block;margin:.1rem 0 .75rem}
+.investor-opportunities h3{margin:.2rem 0 .55rem;font-size:1.25rem}
+.investor-evidence{align-items:stretch;grid-template-columns:minmax(0,1fr) minmax(0,.75fr)}
+.investor-evidence-note{padding:clamp(1.3rem,3vw,2.2rem);background:white;border-left:4px solid var(--gold)}
+.investor-evidence-note strong{font-family:Georgia,serif;font-size:1.45rem}
+.investor-evidence-note p{color:var(--muted)}
+@media(max-width:980px){.institutional-hero{grid-template-columns:1fr}.institutional-hero-visual .sector-photo{aspect-ratio:16/9}.agropole-steps{grid-template-columns:repeat(2,minmax(0,1fr))}.agropole-pillars{grid-template-columns:repeat(2,minmax(0,1fr))}.investor-evidence{grid-template-columns:1fr}}
+@media(max-width:650px){.institutional-hero{gap:1.3rem}.institutional-hero h1{font-size:clamp(2.3rem,10.3vw,3.6rem)}.institutional-hero-visual .sector-photo{aspect-ratio:4/3}.agropole-pillars,.agropole-steps,.investor-opportunities{grid-template-columns:1fr}.institutional-cta{align-items:flex-start;flex-direction:column}.institutional-cta .button{max-width:100%}.agropole-step-number{margin-bottom:.4rem}}
