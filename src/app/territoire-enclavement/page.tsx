@@ -38,9 +38,7 @@ export default function Page(){return <main>
   <div className="grid territory-challenges">{challenges.map(([num,title,description])=><article className="card" key={num}><span className="number">{num}</span><h3>{title}</h3><p>{description}</p></article>)}</div>
  </section>
 
- <section className="band" id="atlas-territorial">
-  <TerritoryAtlas/>
- </section>
+ <div id="atlas-territorial" className="territory-atlas-anchor"><TerritoryAtlas/></div>
 
  <section>
   <div className="section-heading"><p className="eyebrow">Continuité logistique</p><h2>Du champ au marché, chaque maillon compte.</h2></div>
