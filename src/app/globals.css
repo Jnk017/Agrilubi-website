@@ -188,3 +188,45 @@
  .territory-more{align-items:flex-start;flex-direction:column;gap:.65rem}
  .territory-atlas-anchor>.band{margin:2rem 0}
 }
+
+/* Impact, governance and contact: editorial presentation */
+.impact-section{scroll-margin-top:1.5rem}
+.impact-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(.9rem,2vw,1.4rem)}
+.impact-card{display:flex;flex-direction:column;min-width:0}
+.impact-card-top{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.impact-card .number{font-size:clamp(1.9rem,2.6vw,2.6rem)}
+.impact-odd-label{display:inline-flex;align-items:center;background:#e9ecdb;color:var(--green);font-size:.76rem;letter-spacing:.06em;font-weight:700;padding:.35rem .65rem;border-radius:2px}
+.impact-card h3{font-family:Georgia,serif;font-weight:500;font-size:clamp(1.35rem,2vw,1.8rem);margin:.65rem 0 .35rem}
+.impact-card h4{font-size:.9rem;margin:1.15rem 0 .35rem;color:var(--green)}
+.impact-card ul{margin:.3rem 0 0;padding-left:1.35rem;color:#4c544d}
+.impact-card li+li{margin-top:.35rem}
+.governance-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(.85rem,1.7vw,1.4rem)}
+.governance-card .number{display:block;margin:.1rem 0 .75rem;font-size:clamp(1.9rem,2.8vw,2.5rem)}
+.governance-card h3{margin:.2rem 0 .6rem;font-family:Georgia,serif;font-weight:500;font-size:1.35rem}
+.governance-partners{grid-template-columns:repeat(2,minmax(0,1fr))}
+.contact-page-intro{max-width:900px}
+.contact-layout{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(260px,.8fr);gap:clamp(1rem,3vw,2.5rem);align-items:stretch}
+.contact-primary{background:#fff;border:1px solid #e3dfd3;border-top:4px solid var(--gold);padding:clamp(1.5rem,3.3vw,3rem)}
+.contact-primary h2{margin:.4rem 0 1.8rem;font-size:clamp(1.8rem,2.7vw,2.5rem)}
+.contact-details{display:grid;gap:1.3rem;font-style:normal}
+.contact-detail{border-top:1px solid #e8e3d8;padding-top:1rem}
+.contact-label{display:block;text-transform:uppercase;letter-spacing:.12em;font-size:.73rem;font-weight:700;color:var(--earth);margin-bottom:.35rem}
+.contact-detail p{margin:.15rem 0;font-size:1.05rem}
+.contact-detail a{color:var(--green);font-weight:700;text-underline-offset:4px;overflow-wrap:anywhere}
+.contact-phone-list{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem}
+.contact-call-link{align-self:center;color:var(--green);font-weight:700;text-underline-offset:4px}
+.contact-side{background:var(--green);color:white;padding:clamp(1.5rem,3.3vw,3rem);display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+.contact-side .eyebrow{color:var(--gold)}
+.contact-side h3{font-family:Georgia,serif;font-size:clamp(1.6rem,2.7vw,2.3rem);font-weight:500;margin:.3rem 0 .7rem}
+.contact-side p{color:#e2eae5;max-width:53ch}
+.contact-side a{color:#fff;text-underline-offset:4px;font-weight:700;margin-top:1rem}
+.contact-topics{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:980px){.governance-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.contact-layout{grid-template-columns:1fr}}
+@media(max-width:650px){
+ .impact-grid,.governance-grid,.governance-partners,.contact-topics{grid-template-columns:1fr}
+ .contact-layout{gap:1rem}
+ .contact-primary,.contact-side{padding:1.4rem}
+ .contact-primary h2{margin-bottom:1.2rem}
+ .contact-phone-list{flex-direction:column;align-items:flex-start}
+ .impact-card h3{font-size:1.4rem}
+}
