@@ -18,8 +18,9 @@ export default function TerritoryMap({sites,boundary}:Props){
     if(disposed||!host.isConnected)return;
     map=L.map(host,{scrollWheelZoom:false,keyboard:true,attributionControl:true});
     const bounds=L.latLngBounds([]);
-    if(approvedBoundary(boundary??null)){
-     const geometry={type:"FeatureCollection",features:boundary.features} as import("geojson").FeatureCollection;
+    const verifiedBoundary=boundary??null;
+    if(approvedBoundary(verifiedBoundary)){
+     const geometry={type:"FeatureCollection",features:verifiedBoundary.features} as import("geojson").FeatureCollection;
      const layer=L.geoJSON(geometry,{style:{color:"#0B3D2E",weight:2,fillColor:"#C9A227",fillOpacity:.12}}).addTo(map);
      if(layer.getBounds().isValid())bounds.extend(layer.getBounds());
     }
