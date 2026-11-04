@@ -1,0 +1,6 @@
+export const dictionaries={
+ fr:{home:"Accueil",agropole:"L’Agropole",crops:"Filières",territory:"Territoire",infrastructure:"Infrastructures",impact:"Impact",governance:"Gouvernance",invest:"Investir",news:"Actualités",media:"Médias",documents:"Documents",contact:"Contact",title:"Un territoire à révéler. Des filières à bâtir.",description:"Un projet agricole territorial qui associe production, transformation, producteurs partenaires et accès aux marchés.",notice:"Projet en développement : les objectifs ne constituent pas des réalisations confirmées."},
+ en:{home:"Home",agropole:"The Agropole",crops:"Value chains",territory:"Territory",infrastructure:"Infrastructure",impact:"Impact",governance:"Governance",invest:"Invest",news:"News",media:"Media",documents:"Documents",contact:"Contact",title:"A territory to connect. Value chains to develop.",description:"An agricultural development initiative focused on production, local processing, farmer partnerships and access to markets.",notice:"Project in development: planned activities are not presented as completed."}
+} as const;
+export type Locale=keyof typeof dictionaries;
+export function getDictionary(locale:Locale){return dictionaries[locale];}

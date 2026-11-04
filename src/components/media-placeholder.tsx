@@ -1,0 +1,2 @@
+type Props={label:string,description:string};
+export function MediaPlaceholder({label,description}:Props){return <aside className="media-placeholder" aria-label={label}><div className="media-placeholder-inner"><span className="media-placeholder-kicker">Agropole du Sankuru</span><strong>{label}</strong><p>{description}</p><small>Visuel officiel à intégrer après vérification et autorisation</small></div></aside>}
