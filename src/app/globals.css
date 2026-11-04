@@ -92,3 +92,25 @@
  .principle-card h3{margin-bottom:.2rem}
  .principle-card{padding:1rem 1.2rem}
 }
+
+/* Public-license sector photo cards */
+.sector-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(1rem,2vw,1.6rem)}
+.sector-card{min-width:0;background:#fff;border:1px solid #e3dfd3;overflow:hidden;display:flex;flex-direction:column;transition:transform .18s ease,box-shadow .18s ease}
+.sector-card:hover{transform:translateY(-3px);box-shadow:0 12px 32px #092b201c}
+.sector-photo{margin:0;min-width:0;position:relative;overflow:hidden;background:linear-gradient(140deg,#245440,#647b46);color:#fff}
+.sector-card .sector-photo{aspect-ratio:16/11}
+.sector-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;min-height:0}
+.sector-photo figcaption{position:absolute;bottom:0;left:0;right:0;padding:.55rem .75rem;background:linear-gradient(transparent,#062d24eb 30%);color:#fff;font-size:.65rem;line-height:1.35}
+.sector-photo figcaption a{color:#fff;text-underline-offset:2px}
+.sector-photo figcaption span{display:block}
+.sector-photo-note{font-weight:700;margin-bottom:.2rem}
+.sector-card-body{padding:clamp(1.2rem,2vw,1.75rem);display:flex;flex-direction:column;flex:1}
+.sector-card-body h3,.sector-card-body h2{font-family:Georgia,serif;font-size:clamp(1.3rem,2vw,1.7rem);margin:0 0 .7rem}
+.sector-card-body p{margin:0 0 1.35rem;color:var(--muted)}
+.sector-card-body a{margin-top:auto;color:var(--green);font-weight:700;text-underline-offset:4px}
+.sector-detail-header{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(1.4rem,4vw,4rem);align-items:center;margin:2rem 0}
+.sector-detail-header .page-intro{margin:0}
+.sector-detail-header .sector-photo{aspect-ratio:4/3;border-radius:2px}
+@media(max-width:980px){.sector-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.sector-detail-header{grid-template-columns:1fr}}
+@media(max-width:580px){.sector-grid{grid-template-columns:1fr}.sector-card .sector-photo{aspect-ratio:16/10}.sector-card-body{padding:1.1rem 1.25rem}.sector-detail-header{gap:1.5rem;margin:1.3rem 0}}
+@media(prefers-reduced-motion:reduce){.sector-card{transition:none}.sector-card:hover{transform:none}}
