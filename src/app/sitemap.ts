@@ -1,6 +1,6 @@
 import type {MetadataRoute} from "next";
 import {publishedNews} from "@/data/news";
-const routes=["","/agropole","/filieres","/filieres/vivrieres","/filieres/maraicheres","/filieres/perennes","/filieres/pisciculture","/filieres/elevage","/filieres/producteurs","/filieres/producteurs-partenaires","/territoire-enclavement","/territoire-enclavement/logistique","/infrastructures","/infrastructures/transformation","/impact-odd","/gouvernance-partenaires","/investir","/investir/dossier","/actualites","/medias","/documents","/contact","/en"];
+const routes=["","/agropole","/filieres","/filieres/vivrieres","/filieres/maraicheres","/filieres/perennes","/filieres/pisciculture","/filieres/elevage","/filieres/producteurs","/filieres/producteurs-partenaires","/territoire-enclavement","/territoire-enclavement/logistique","/infrastructures","/infrastructures/transformation","/impact-odd","/gouvernance-partenaires","/investir","/investir/dossier","/actualites","/medias","/documents","/contact","/credits-photographiques","/en"];
 export default function sitemap():MetadataRoute.Sitemap{
  const origin=process.env.NEXT_PUBLIC_SITE_URL;
  if(!origin)return [];
