@@ -230,3 +230,13 @@
  .contact-phone-list{flex-direction:column;align-items:flex-start}
  .impact-card h3{font-size:1.4rem}
 }
+
+/* Unobstructed editorial photography and accessible credits */
+.sector-photo{overflow:hidden}
+.sector-photo>img{display:block;width:100%;height:100%;object-fit:cover}
+.photo-credit-list{display:grid;gap:1rem}
+.photo-credit-entry{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:1.2rem;padding:1.5rem;background:#fff;border:1px solid #e2ded4;border-left:4px solid var(--gold)}
+.photo-credit-entry h3{font-family:Georgia,serif;font-weight:500;font-size:1.5rem;margin:0 0 .6rem}
+.photo-credit-entry p{margin:.4rem 0;color:#465047}
+.photo-credit-entry a{color:var(--green);text-underline-offset:3px;overflow-wrap:anywhere}
+@media(max-width:650px){.photo-credit-entry{grid-template-columns:1fr;padding:1.2rem;gap:.4rem}}
