@@ -11,5 +11,5 @@ export function SiteFooter(){return <footer className="site-footer">
   </address>
   <p className="footer-note">Projet en développement : les activités présentées n'impliquent pas qu'elles soient toutes opérationnelles.</p>
  </div>
- <nav className="footer-links" aria-label="Navigation de pied de page"><Link href="/filieres">Filières</Link><Link href="/territoire-enclavement">Territoire</Link><Link href="/investir">Partenariats</Link><Link href="/contact">Contact</Link></nav>
+ <nav className="footer-links" aria-label="Navigation de pied de page"><Link href="/filieres">Filières</Link><Link href="/territoire-enclavement">Territoire</Link><Link href="/investir">Partenariats</Link><Link href="/contact">Contact</Link><Link href="/credits-photographiques">Crédits photos</Link></nav>
  </footer>}
