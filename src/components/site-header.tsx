@@ -43,7 +43,7 @@ export function SiteHeader(){
    </button>
   </div>
   <nav id={menuId} className={`primary-nav${isOpen?" is-open":""}`} aria-label="Navigation principale">
-   {links.map(([href,label])=><Link key={href} href={href} onClick={()=>setIsOpen(false)} aria-current={pathname===href||(href!=="/"&&pathname.startsWith(href+"/"))?"page":undefined}>{label}</Link>)}
+   {links.map(([href,label])=><Link key={href} href={href} onClick={()=>setIsOpen(false)} aria-current={pathname===href||pathname.startsWith(href+"/")?"page":undefined}>{label}</Link>)}
   </nav>
  </header>;
 }
