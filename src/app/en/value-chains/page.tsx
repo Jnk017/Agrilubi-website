@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type {Metadata} from "next";
 import {SectorIllustration} from "@/components/sector-illustration";
-export const metadata:Metadata={title:"Agricultural value chains | SALU",description:"Six proposed agricultural value chains in the Sankuru Agropole initiative."};
+export const metadata:Metadata={alternates:{canonical:"/en/value-chains",languages:{en:"/en/value-chains",fr:"/filieres"}},title:"Agricultural value chains | SALU",description:"Six proposed agricultural value chains in the Sankuru Agropole initiative."};
 const sectors=[
  ["vivrieres","Food crops","Maize, rice, cassava and soybeans."],
  ["maraicheres","Horticulture and spices","Chilli peppers, vegetables, watermelons, cucumbers and spices."],
