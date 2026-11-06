@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type {Metadata} from "next";
 import {SectorIllustration} from "@/components/sector-illustration";
-export const metadata:Metadata={title:"Investment and partnerships | SALU",description:"Explore potential technical and investment cooperation with SALU's agricultural development initiative in Sankuru."};
+export const metadata:Metadata={alternates:{canonical:"/en/invest",languages:{en:"/en/invest",fr:"/investir"}},title:"Investment and partnerships | SALU",description:"Explore potential technical and investment cooperation with SALU's agricultural development initiative in Sankuru."};
 const areas=[
  ["Agricultural production","Agronomic assessment, farmer training, inputs and appropriate mechanisation."],
  ["Local processing","Feasibility of storage, drying, milling and packaging facilities."],
