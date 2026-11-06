@@ -6,7 +6,7 @@ import {getDictionary} from "@/i18n/dictionaries";
 export const metadata:Metadata={
  title:"Sankuru Agropole — English overview",
  description:"Société Agricole de Lubi (SALU): an agricultural development initiative in Sankuru, DR Congo, focused on value chains, farmer partnerships and market access.",
- alternates:{languages:{"en":"/en","fr":"/"}}
+ alternates:{canonical:"/en",languages:{en:"/en",fr:"/"}}
 };
 const areas=[
  ["Agricultural value chains","Food crops, horticulture, perennial crops, aquaculture and livestock, subject to appropriate studies.","/en/value-chains"],
