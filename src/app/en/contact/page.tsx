@@ -1,6 +1,6 @@
 import type {Metadata} from "next";
 import {companyContact} from "@/data/company-contact";
-export const metadata:Metadata={title:"Contact SALU | Sankuru Agropole",description:"Contact the Société Agricole de Lubi at 05 Avenue de la Science, Gombe, Kinshasa, DR Congo."};
+export const metadata:Metadata={alternates:{canonical:"/en/contact",languages:{en:"/en/contact",fr:"/contact"}},title:"Contact SALU | Sankuru Agropole",description:"Contact the Société Agricole de Lubi at 05 Avenue de la Science, Gombe, Kinshasa, DR Congo."};
 export default function Page(){return <main lang="en">
  <div className="page-intro"><p className="eyebrow">Institutional relations</p><h1>Get in touch with SALU.</h1><p>For inquiries about agricultural value chains, technical cooperation or prospective partnerships, please contact Société Agricole de Lubi using the details below.</p></div>
  <section className="contact-layout">
