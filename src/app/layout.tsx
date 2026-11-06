@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import {headers} from "next/headers";
+import {DocumentLocale} from "@/components/document-locale";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import "leaflet/dist/leaflet.css";
@@ -10,4 +12,6 @@ export const metadata: Metadata = {
  robots:{index:false,follow:false},
  openGraph:{type:"website",locale:"fr_CD",title:"Agropole du Sankuru | SALU",description:"Un territoire à révéler. Des filières à bâtir."}
 };
-export default function RootLayout({children}:Readonly<{children:React.ReactNode}>){return <html lang="fr"><body><a className="skip-link" href="#main-content">Aller au contenu principal</a><SiteHeader/><div id="main-content">{children}</div><SiteFooter/></body></html>}
+export default function RootLayout({children}:Readonly<{children:React.ReactNode}>){
+ const locale=headers().get("x-salu-locale")==="en"?"en":"fr";
+ return <html lang={locale}><body><DocumentLocale/><a className="skip-link" href="#main-content">Aller au contenu principal</a><SiteHeader/><div id="main-content">{children}</div><SiteFooter/></body></html>}
