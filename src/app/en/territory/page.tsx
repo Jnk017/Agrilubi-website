@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type {Metadata} from "next";
-export const metadata:Metadata={title:"Territory and market access | SALU",description:"How agricultural collection, storage and transport shape development opportunities in Sankuru."};
+export const metadata:Metadata={alternates:{canonical:"/en/territory",languages:{en:"/en/territory",fr:"/territoire-enclavement"}},title:"Territory and market access | SALU",description:"How agricultural collection, storage and transport shape development opportunities in Sankuru."};
 const issues=[
  ["Scattered production","Collection networks must be designed around actual farm locations and harvest schedules."],
  ["Post-harvest quality","Drying, sorting and storage solutions need to reflect each crop's characteristics."],
