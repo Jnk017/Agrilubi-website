@@ -4,6 +4,8 @@ import { SiteFooter } from "@/components/site-footer";
 import "leaflet/dist/leaflet.css";
 import "./globals.css";
 export const metadata: Metadata = {
+ metadataBase:new URL("https://agrilubi.com"),
+ alternates:{canonical:"/"},
  title:{default:"Agropole du Sankuru | SALU",template:"%s | Agropole du Sankuru"},
  description:"Société Agricole de Lubi : initiative agricole territoriale dans le Sankuru, RDC, associant filières agricoles, transformation et producteurs partenaires.",
  robots:{index:false,follow:false},
